@@ -3,40 +3,40 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://marcelbehrmann.de/blog/ludum-dare-37/</loc>
+    <loc>https://eldorandev.github.io/blog/ludum-dare-37/</loc>
     <lastmod>2016-12-13T12:10:51+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://marcelbehrmann.de/blog/</loc>
+    <loc>https://eldorandev.github.io/blog/</loc>
     <lastmod>2016-12-13T12:10:51+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://marcelbehrmann.de/categories/</loc>
+    <loc>https://eldorandev.github.io/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://marcelbehrmann.de/tags/events/</loc>
-    <lastmod>2016-12-13T12:10:51+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://marcelbehrmann.de/tags/gamedev/</loc>
+    <loc>https://eldorandev.github.io/tags/events/</loc>
     <lastmod>2016-12-13T12:10:51+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://marcelbehrmann.de/</loc>
+    <loc>https://eldorandev.github.io/tags/gamedev/</loc>
     <lastmod>2016-12-13T12:10:51+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://marcelbehrmann.de/tags/</loc>
+    <loc>https://eldorandev.github.io/</loc>
+    <lastmod>2016-12-13T12:10:51+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://eldorandev.github.io/tags/</loc>
     <lastmod>2016-12-13T12:10:51+02:00</lastmod>
     <priority>0</priority>
   </url>
