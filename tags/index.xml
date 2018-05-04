@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Marcel Behrmann</title>
+    <link>https://marcelbehrmann.de/tags/</link>
+    <description>Recent content in Tags on Marcel Behrmann</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>DE-de</language>
+    <lastBuildDate>Tue, 13 Dec 2016 12:10:51 +0200</lastBuildDate>
+    
+	<atom:link href="https://marcelbehrmann.de/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Events</title>
+      <link>https://marcelbehrmann.de/tags/events/</link>
+      <pubDate>Tue, 13 Dec 2016 12:10:51 +0200</pubDate>
+      
+      <guid>https://marcelbehrmann.de/tags/events/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Gamedev</title>
+      <link>https://marcelbehrmann.de/tags/gamedev/</link>
+      <pubDate>Tue, 13 Dec 2016 12:10:51 +0200</pubDate>
+      
+      <guid>https://marcelbehrmann.de/tags/gamedev/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

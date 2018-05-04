@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="DE-de">
+<head>
+    <title>Ludum Dare 37 &middot; Marcel Behrmann</title>
+    <meta name="generator" content="Hugo 0.40.2" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="Marcel Behrmann">
+    
+      <meta name="description" content="">
+    
+    
+    <link rel="canonical" href="https://marcelbehrmann.de/blog/ludum-dare-37/"/>
+    <link rel="icon" href="https://marcelbehrmann.de/favicon.ico">
+    <link rel="apple-touch-icon" href="https://marcelbehrmann.de/apple-touch-icon.png"/>
+    <link rel="stylesheet" href="https://marcelbehrmann.de/css/style.css">
+    <link rel="stylesheet" href="https://marcelbehrmann.de/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://marcelbehrmann.de/css/monokai.css">
+    <link rel="stylesheet" href="https://marcelbehrmann.de/fancybox/jquery.fancybox.css">
+    
+    <link rel="stylesheet" href="https://marcelbehrmann.de/css/custom-style.css">
+    
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
+    <meta property="og:title" content="Ludum Dare 37" />
+<meta property="og:description" content="Am letzten Wochenende, vom 09.12.2016 bis zum 11.12.2016, fand zum 37.  mal der Wettbewerb Ludum Dare statt. Trotz Vorbereitung konnte ich am LD37 nicht vollständig Teilnehmen von den 48 Stunden die eigentlich zur Verfügung stehen konnte ich ca. 12 Stunden auf das Entwickeln meines eigene Spieles verwenden.
+
+" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://marcelbehrmann.de/blog/ludum-dare-37/" />
+
+
+
+<meta property="article:published_time" content="2016-12-13T12:10:51&#43;02:00"/>
+
+<meta property="article:modified_time" content="2016-12-13T12:10:51&#43;02:00"/>
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+<meta itemprop="name" content="Ludum Dare 37">
+<meta itemprop="description" content="Am letzten Wochenende, vom 09.12.2016 bis zum 11.12.2016, fand zum 37.  mal der Wettbewerb Ludum Dare statt. Trotz Vorbereitung konnte ich am LD37 nicht vollständig Teilnehmen von den 48 Stunden die eigentlich zur Verfügung stehen konnte ich ca. 12 Stunden auf das Entwickeln meines eigene Spieles verwenden.
+
+">
+
+
+<meta itemprop="datePublished" content="2016-12-13T12:10:51&#43;02:00" />
+<meta itemprop="dateModified" content="2016-12-13T12:10:51&#43;02:00" />
+<meta itemprop="wordCount" content="152">
+
+
+
+<meta itemprop="keywords" content="Events,GameDev," />
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Ludum Dare 37"/>
+<meta name="twitter:description" content="Am letzten Wochenende, vom 09.12.2016 bis zum 11.12.2016, fand zum 37.  mal der Wettbewerb Ludum Dare statt. Trotz Vorbereitung konnte ich am LD37 nicht vollständig Teilnehmen von den 48 Stunden die eigentlich zur Verfügung stehen konnte ich ca. 12 Stunden auf das Entwickeln meines eigene Spieles verwenden.
+
+"/>
+<meta name="twitter:site" content="@EldoranDev"/>
+
+    
+
+    
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+<div class="container">
+
+
+<div id="container">
+	<header id="header">
+  <div id="header-main" class="header-inner">
+    <div class="outer">
+      <a href="https://marcelbehrmann.de/" id="logo">
+          
+          <i class="logo" style="background-image: url('https://marcelbehrmann.de/css/images/logo.png')"></i>
+          
+          <span class="site-title">Marcel Behrmann</span>
+      </a>
+      <nav id="main-nav">
+          
+          
+          <a class="main-nav-link" href="https://marcelbehrmann.de/">Home</a>
+          
+          
+          
+          
+
+          
+
+          
+          
+          
+          
+          <a class="main-nav-link" href="https://marcelbehrmann.de/blog">Blog</a>
+          
+          
+      </nav>
+        <nav id="sub-nav">
+          <div class="profile" id="profile-nav">
+            <a id="profile-anchor" href="javascript:;"><img class="avatar" src="https://marcelbehrmann.de/css/images/avatar.png"><i class="fa fa-caret-down"></i></a>
+          </div>
+        </nav>
+        <div id="search-form-wrap">
+          <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form">
+              <input type="search" name="q" class="search-form-input" placeholder="Search">
+              <button type="submit" class="search-form-submit">
+              </button>
+              <input type="hidden" name="sitesearch" value="https://marcelbehrmann.de/" />
+         </form>
+        </div>
+    </div>
+  </div>
+  <div id="main-nav-mobile" class="header-sub header-inner">
+    <table class="menu outer">
+      <tbody>
+          <tr>
+          
+          
+          <td><a class="main-nav-link" href="https://marcelbehrmann.de/">Home</a></td>
+          
+          
+          
+          
+
+          
+
+          
+          
+          
+          
+          <td><a class="main-nav-link" href="https://marcelbehrmann.de/blog">Blog</a></td>
+          
+          
+          <td>
+          <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form">
+          <input type="search" name="q" class="search-form-input" placeholder="Search">
+          <input type="hidden" name="sitesearch" value="https://marcelbehrmann.de/" />
+          </form>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</header>
+
+   	
+   	<div class="outer">
+   	
+    	<aside id="profile">
+  <div class="inner profile-inner">
+    <div class="base-info profile-block">
+      
+      <img id="avatar" src="https://www.gravatar.com/avatar/34c8bce635e87412a7f5d32be998ce71?s=100&d=identicon"/>
+      
+      <h2 id="name">Marcel Behrmann</h2>
+      <h3 id="title">Games &amp; Apps aus Leidenschaft</h3>
+      <span id="location"><i class="fa fa-map-marker"></i>Earth</span>
+      
+          <a id="follow" href="https://github.com/EldoranDev">
+              Follow
+          </a>
+      
+    </div>
+    <div class="article-info profile-block">
+      <div class="article-info-block">
+        0
+        <span>Posts</span>
+      </div>
+      <div class="article-info-block">
+        
+          2
+        
+        <span>
+            Tags
+        </span>
+      </div>
+    </div>
+    <div class="profile-block social-links">
+      <table>
+        <tr>
+          
+<td><a href="//github.com/EldoranDev" target="_blank" title="GitHub"><i class="fa fa-github"></i></a></td>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<td><a href="//twitter.com/EldoranDev" target="_blank" title="Twitter"><i class="fa fa-twitter"></i></a></td>
+
+
+          <td><a href="https://marcelbehrmann.de/index.xml" target="_blank" title="RSS"><i class="fa fa-rss"></i></a></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</aside>
+
+    
+
+    <section id="main">
+    
+    <article id="page-undefined" class="article article-type-page" itemscope="" itemprop="blogPost">
+    <div class="article-inner">
+        
+            <img src="https://marcelbehrmann.de/banners/ludum-dare-37.jpg" class="article-banner">
+        
+
+        <header class="article-header">
+    <a href="https://marcelbehrmann.de/blog/ludum-dare-37/">
+    <h1 class="article-title" itemprop="name">
+        Ludum Dare 37
+    </h1>
+    </a>
+    <div class="article-meta">
+
+        
+        <div class="article-date">
+            <i class="fa fa-calendar"></i>
+            <time datetime="2016-12-13 12:10:51 &#43;0200 &#43;0200" itemprop="datePublished">2016-12-13</time>
+            &middot;
+            152
+            words
+            &middot;
+            1
+            minute read
+        </div>
+        
+        
+            
+            
+        
+
+        
+            
+            
+            <div class="article-category">
+                <i class="fa fa-tags"></i>
+                
+                
+                <a class="article-category-link" href="https://marcelbehrmann.de/tags/events">Events</a>
+                &middot;
+                
+                
+                <a class="article-category-link" href="https://marcelbehrmann.de/tags/gamedev">GameDev</a>
+                
+                
+            </div>
+            
+        
+    </div>
+</header>
+
+        <div class="article-entry" itemprop="articleBody">
+            <p>Am letzten Wochenende, vom 09.12.2016 bis zum 11.12.2016, fand zum 37.  mal der Wettbewerb Ludum Dare statt. Trotz Vorbereitung konnte ich am LD37 nicht vollständig Teilnehmen von den 48 Stunden die eigentlich zur Verfügung stehen konnte ich ca. 12 Stunden auf das Entwickeln meines eigene Spieles verwenden.</p>
+
+<p></p>
+
+<p>Das Thema des LD37 war „One Room“, was in meinem Kopf schnell eine Iteration eines Mini-Spiels das ich zu Beginn meines Studium erstellt hatte. Ein simpler Top Down Shooter im Survival Stil. In „TopZombie“ muss der Spieler sich in einem Raum gegen Wellen von Zombies verteidigen. Zur Verfügung hat der Spieler dafür nur die am Beginn vergebene Pistole und die von den Zombies fallen gelassenen Pistolen / Gewehre.</p>
+
+<p>Einige Feature die ich implementieren wollte habe ich auf Grund meines zu knapp geplanten Zeit Managements nicht fertig stellen können, daher ist die einzige Nahkampf Waffe die implementiert ist, die Klaue der Zombies (allerdings auch ohne Animation).</p>
+
+<!-- Gespielt werden kann TopZombie unter: https://www.marcelbehrmann.de/games/demos/LudumDare/37/index.html. -->
+        </div>
+        <footer class="article-footer">
+    <a data-url="https://marcelbehrmann.de/blog/ludum-dare-37/" data-id="660ec11075b8449ec1c331c5305b467b" class="article-share-link">
+        <i class="fa fa-share"></i>
+        Share
+    </a>
+    
+
+    <script>
+    (function ($) {
+        
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+    </script>
+</footer>
+
+    </div>
+
+    
+
+</article>
+
+
+
+    </section>
+
+   	
+    	<aside id="sidebar">
+    
+<div class="widget-wrap">
+    <h3 class="widget-title">
+        Recents
+    </h3>
+    <div class="widget">
+        <ul id="recent-post">
+            
+        </ul>
+    </div>
+</div>
+
+
+    
+
+
+
+
+
+    
+
+
+<div class="widget-wrap">
+    <h3 class="widget-title">
+        Tags
+    </h3>
+    <div class="widget">
+        <ul class="category-list">
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://marcelbehrmann.de/tags/events">
+                    events
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://marcelbehrmann.de/tags/gamedev">
+                    gamedev
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+
+    
+
+
+<div class="widget-wrap">
+    <h3 class="widget-title">
+        Tag cloud
+    </h3>
+    <div class="widget tagcloud">
+        
+        
+        <a href="https://marcelbehrmann.de/tags/events" style="font-size: 12px;">events</a>
+        
+        
+        <a href="https://marcelbehrmann.de/tags/gamedev" style="font-size: 12px;">gamedev</a>
+        
+    </div>
+</div>
+
+
+
+
+
+    <div id="toTop" class="fa fa-angle-up"></div>
+</aside>
+
+    
+	</div>
+</div>
+
+<footer id="footer">
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2018
+      Powered by <a href="//gohugo.io">Hugo</a>. Theme by <a href="http://github.com/ppoffice">PPOffice</a>.
+    </div>
+  </div>
+</footer>
+
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-44949018-2', 'auto');
+ga('send', 'pageview');
+</script>
+
+<script src="https://marcelbehrmann.de/fancybox/jquery.fancybox.pack.js"></script>
+<script src="https://marcelbehrmann.de/js/script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
+
+
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']]}
+  });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+
+
+</body>
+</html>
