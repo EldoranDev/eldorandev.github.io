@@ -1,11 +1,7 @@
 <template>
     <v-flex ma-2>
               <v-card >
-                <!--<v-img
-                  class="white--text"
-                  height="170px"
-                  :src="edge.node.fields.image"
-                ></v-img>-->
+                <g-image :src="project.fields.image" />
                 <v-card-title primary-title>
                   <div>
                     <h3 class="headline mb-0">{{ project.title }}</h3>
@@ -27,6 +23,6 @@ export default {
     name: 'ProjectCard',
     props: {
         project: Object
-    }
+    },
 }
 </script>
