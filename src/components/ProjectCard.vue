@@ -1,6 +1,10 @@
 <template>
     <v-flex ma-2>
       <v-card>
+        <v-img
+          class="white--text"
+          height="170px"
+          :src="project.fields.image" />
         <v-card-title primary-title>
           <div>
             <h3 class="headline mb-0">{{ project.title }}</h3>
