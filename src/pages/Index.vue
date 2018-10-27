@@ -37,7 +37,7 @@
               </v-layout>
             </div>
           </v-flex>
-          <v-flex xs12 md6 offset-md2>
+          <v-flex xs12 md6 xl4 offset-md2>
             <project-card v-for="edge in $page.allProject.edges" :key="edge.node._id" :project="edge.node" />            
           </v-flex>
         </v-layout>
@@ -87,7 +87,7 @@ export default {
 
 <page-query>
 query Project {
-  allProject {
+  allProject (order: DESC) {
     edges {
       node {
         _id,
@@ -97,7 +97,8 @@ query Project {
         fields {
           image,
           date,
-          github
+          github,
+          link,
         }
       }
     }
