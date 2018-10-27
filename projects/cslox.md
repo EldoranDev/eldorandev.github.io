@@ -1,7 +1,6 @@
 ---
 author: Marcel Behrmann
 title: CSLox
-image: "src/static/img/cslox.png"
 date: "2017-11-06"
 github: https://github.com/EldoranDev/cslox
 ---
