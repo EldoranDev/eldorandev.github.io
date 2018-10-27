@@ -14,7 +14,7 @@
                   </div>
                 </v-card-title>
                 <v-card-actions>
-                <v-btn icon v-if="project.fields && project.fields.github">
+                <v-btn icon v-if="project.fields && project.fields.github" :href="project.fields.github" target='_blank'>
                     <v-icon medium :href="project.github" target="_blank">fa-github</v-icon>
                 </v-btn>
                 </v-card-actions>
