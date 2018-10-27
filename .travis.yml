@@ -1,7 +1,9 @@
 language: node_js
 node_js: 10
 script: yarn run build
-
+branches:
+  only:
+    - develop
 deploy:
   provider: pages
   skip-cleanup: true
@@ -11,4 +13,4 @@ deploy:
   target-branch: master
   fqdn: www.marcelbehrmann.de
   on:
-    branch: source
+    branch: develop
