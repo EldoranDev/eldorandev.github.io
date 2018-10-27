@@ -15,7 +15,6 @@ module.exports = {
       options: {
         path: 'projects/*.md',
         typeName: 'Project',
-        route: '/projects/:year/:month/:slug'
       }
     },
   ]
