@@ -6,10 +6,10 @@
           <v-flex xs12 md2 offset-md1>
             <div class="text-xs-center">
               <v-avatar size="125px">
-                <!--<g-image
+                <g-image
                   class="img-circle elevation-7 mb-1"
                   src="../../images/avatar.jpg"
-                ></g-image>-->
+                ></g-image>
               </v-avatar>
               <div class="headline">Marcel <span style="font-weight:bold">Behrmann</span></div>
               <div class="subheading text-xs-center grey--text pt-1 pb-3">Games & Apps</div>
