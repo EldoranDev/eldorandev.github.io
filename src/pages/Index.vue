@@ -43,7 +43,7 @@
         </v-layout>
       </v-container>
     </v-content>
-    <v-footer class="secondary" app>
+    <v-footer class="secondary" app dark>
       <v-layout row wrap align-center>
         <v-flex xs12>
           <v-layout row wrap align-center>
@@ -64,6 +64,7 @@ import ProjectCard from '@/components/ProjectCard.vue';
 
 export default {
   metaInfo: {
+    title: "Home",
     link: [
       {
         rel: 'stylesheet',

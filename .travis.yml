@@ -1,0 +1,14 @@
+language: node_js
+node_js: 10
+script: yarn run build
+
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN
+  keep-history: true
+  local-dir: dist
+  target-branch: master
+  fqdn: www.marcelbehrmann.de
+  on:
+    branch: source

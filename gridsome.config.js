@@ -1,4 +1,6 @@
 module.exports = {
+  siteName: "Marcel Behrmann",
+  siteUrl: "https://www.marcelbehrmann.de",
   plugins: [
     {
       use: '@gridsome/source-filesystem',
