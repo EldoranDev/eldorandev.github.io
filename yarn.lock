@@ -7219,17 +7219,6 @@ pend@~1.2.0:
   resolved "https://registry.yarnpkg.com/pend/-/pend-1.2.0.tgz#7a57eb550a6783f9115331fcf4663d5c8e007a50"
   integrity sha1-elfrVQpng/kRUzH89GY9XI4AelA=
 
-penthouse@^1.10.0:
-  version "1.10.0"
-  resolved "https://registry.yarnpkg.com/penthouse/-/penthouse-1.10.0.tgz#d9a47eeaa6a057830e2e542ec6c7d7862a2f5b1e"
-  integrity sha512-Co3EuW4+s9R4WEwoSdIBsBc00W8sOQ4zAG9R6DqLJXF1LThcddGS+LrFdAy1PrqZ+7qrnAjpXQjrnbRBIwr/xA==
-  dependencies:
-    css-mediaquery "^0.1.2"
-    css-tree "1.0.0-alpha.28"
-    debug "^4.1.0"
-    jsesc "^2.5.1"
-    puppeteer "1.9.0"
-
 penthouse@^1.6.2:
   version "1.9.2"
   resolved "https://registry.yarnpkg.com/penthouse/-/penthouse-1.9.2.tgz#6595c6750aa0b0c2cfb65caa1940a99b9e283a21"
