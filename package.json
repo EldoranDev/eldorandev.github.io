@@ -10,14 +10,13 @@
     "@gridsome/plugin-critical": "^0.0.5",
     "@gridsome/remark-prismjs": "^0.0.3",
     "@gridsome/source-filesystem": "^0.1.0",
+    "bootstrap-material-design": "^4.1.1",
     "gridsome": "^0.2.0",
-    "material-design-icons-iconfont": "^3.0.3",
-    "materialize-css": "^1.0.0-rc.2",
-    "node-sass": "^4.9.4",
-    "sass-loader": "^7.1.0"
+    "material-design-icons-iconfont": "^3.0.3"
   },
   "devDependencies": {
     "@gridsome/transformer-remark": "^0.0.3",
-    "penthouse": "^1.10.0"
+    "node-sass": "^4.9.4",
+    "sass-loader": "^7.1.0"
   }
 }

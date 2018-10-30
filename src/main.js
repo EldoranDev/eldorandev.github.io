@@ -1,4 +1,4 @@
-import 'materialize-css/dist/css/materialize.css';
+import 'bootstrap-material-design/dist/css/bootstrap-material-design.css';
 
 //import 'material-design-icons-iconfont/dist/material-design-icons.css'
 

@@ -1,13 +1,13 @@
 <template>
   <Layout>
-        <div class="row wrap align-start">
-          <div id="info" class="col s12 m12 l2 offset-l2">
-            <div class="center-align">
+        <div class="row">
+          <div class="col-s-12 col-m-12 col-xl-4">
+            <div style="text-align: center">
                 <g-image 
-                  class="circle z-depth-2 m-1 avatar"
+                  class="rounded-circle avatar"
                   src="../../images/avatar.jpg"
                 ></g-image>
-              <div class="headline">Marcel Behrmann</div>
+              <div class="h3">Marcel Behrmann</div>
               <div class="subheading">Games & Apps</div>
               <div class="nav-links">
                 <a href='https://www.marcelbehrmann.de/' class="icon">
@@ -27,7 +27,7 @@
               </div>
             </div>
           </div>
-          <div class="col offset-l1 l6 offset-xl1 xl4">
+          <div class="col-l-6 col-xl-6">
           <!-- <div class="col s12 m6 xl4 offset-m2"> -->
             <project-card v-for="edge in $page.allProject.edges" :key="edge.node._id" :project="edge.node" />            
           </div>
@@ -74,53 +74,11 @@ export default {
 </script>
 
 <style>
-.headline {
-  font-size: 24px;
-  line-height: 32px;
-  font-weight: 400;
-  letter-spacing: normal;
-}
-
-.subheading {
-  font-size: 16px;
-  font-weight: 400;
-
-  color: #9e9e9e;
-}
-
-.nav-links {
-  justify-content: space-between;
-  display: flex;
-}
-
 .avatar {
   height: 125px;
   width: 125px;
+  box-shadow: 0 4px 5px -2px rgba(0,0,0,.2),0 7px 10px 1px rgba(0,0,0,.14),0 2px 16px 1px rgba(0,0,0,.12)!important;
 }
-.icon {
-  color: rgba(0, 0, 0, .87) !important;
-  justify-content: center;
-  display: inline-flex;
-  align-items: center;
-  width: 36px;
-  height: 36px;
-  vertical-align: middle;
-  font-size: 14px;
-  font-weight: 500;
-  flex: 0 0 auto;
-  margin: 6px 8px;
-  position: relative;
-  text-decoration: none;
-  font-size: 28px;
-}
-
-
-.icon div.content i {
-  
-  font-feature-settings: "liga";
-  line-height: 1;
-}
-
 </style>
 
 <page-query>
