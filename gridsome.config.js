@@ -3,6 +3,17 @@ module.exports = {
   siteUrl: "https://www.marcelbehrmann.de",
   plugins: [
     {
+      use: '@gridsome/plugin-critical',
+      options: {
+        paths: ['/'],
+        width: 1920,
+        height: 1080,
+        penthouse: {
+          blockJSRequests: false,
+        }
+      }
+    },
+    {
       use: '@gridsome/source-filesystem',
       options: {
         path: 'blog/**/*.md',
