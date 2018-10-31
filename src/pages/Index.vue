@@ -9,7 +9,7 @@
           ></g-image>
           <div class="h3 mt-2">Marcel Behrmann</div>
           <div class="subheading">Games & Apps</div>
-          <div class="nav-links row justify-content-between">
+          <div class="nav-links row justify-content-between" style="padding-left: 15px; padding-right: 15px;">
             <app-link icon href='https://github.com/EldoranDev'>
               <i class="fa fa-github"></i>
             </app-link>
