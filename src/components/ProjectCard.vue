@@ -10,12 +10,12 @@
           <h6 class="card-subtitle mb-2 text-muted">{{ project.fields.date }}</h6>
           <div class="card-text" v-html="project.content"></div>
 
-          <a class="icon card-link" v-if="project.fields && project.fields.github" :href="project.fields.github">
+          <app-link icon v-if="project.fields && project.fields.github" :href="project.fields.github">
             <i class="fa fa-github"></i>
-          </a>
-          <a class="icon card-link" v-if="project.fields && project.fields.link" :href="project.fields.link" target='_blank'>
+          </app-link>
+          <app-link icon v-if="project.fields && project.fields.link" :href="project.fields.link">
             <i class="fa fa-globe"></i>
-          </a>
+          </app-link>
         </div>
       </div>
     </div>
@@ -23,6 +23,8 @@
 </template>
 
 <script>
+import AppLink from './Link';
+
 export default {
     name: 'ProjectCard',
     props: {
@@ -32,6 +34,9 @@ export default {
       imageStyle() {
         return `background: url(${this.project.fields.image});`
       }
+    },
+    components: {
+      AppLink
     }
 }
 </script>

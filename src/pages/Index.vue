@@ -10,18 +10,15 @@
           <div class="h3 mt-2">Marcel Behrmann</div>
           <div class="subheading">Games & Apps</div>
           <div class="nav-links row justify-content-between">
-            <a href='https://www.marcelbehrmann.de/' class="icon">
-              <i class="fa fa-home"></i>
-            </a>
-            <a href='https://github.com/EldoranDev' class="icon">
+            <app-link icon href='https://github.com/EldoranDev'>
               <i class="fa fa-github"></i>
-            </a>
-            <a href='https://www.xing.com/profile/Marcel_Behrmann2' class="icon">
+            </app-link>
+            <app-link icon href='https://www.xing.com/profile/Marcel_Behrmann2'>
               <i class="fa fa-xing"></i>
-            </a>
-            <a href='https://twitter.com/EldoranDev' class="icon">
+            </app-link>
+            <app-link icon href='https://twitter.com/EldoranDev'>
               <i class="fa fa-twitter"></i>
-            </a>
+            </app-link>
           </div>
         </div>
       </div>
@@ -30,26 +27,11 @@
       </div>
     </div>
   </Layout>
-<!--
-    <v-footer class="secondary" app dark>
-      <v-layout row wrap align-center>
-        <v-flex xs12>
-          <v-layout row wrap align-center>
-            <v-flex xs12>
-              <div class="white--text ml-3">
-                Made with  <v-icon class="red--text">favorite</v-icon> and <a href="https://gridsome.org/" target="_blank" rel="nofollow noopener noreferrer">Gridsome</a>
-              </div>
-            </v-flex>
-          </v-layout>
-        </v-flex>
-      </v-layout>
-    </v-footer>
-    -->
-
 </template>
 
 <script>
 import ProjectCard from "@/components/ProjectCard.vue";
+import AppLink from "@/components/Link.vue";
 
 export default {
   metaInfo: {
@@ -67,7 +49,8 @@ export default {
     ]
   },
   components: {
-    ProjectCard
+    ProjectCard,
+    AppLink
   }
 };
 </script>
