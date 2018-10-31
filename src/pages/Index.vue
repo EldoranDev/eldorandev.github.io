@@ -55,7 +55,7 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
 .avatar {
   height: 125px;
   width: 125px;

@@ -21,8 +21,31 @@ export default {
 }
 </script>
 
+<style lang="scss">
+@import "~bootstrap-material-design/scss/variables";
+@import "~bootstrap-material-design/scss/mixins";
 
-<style>
+@import "~bootstrap/scss/functions";
+@import "~bootstrap-material-design/scss/functions";
+
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/reboot";
+@import "~bootstrap/scss/variables";
+
+@import "~bootstrap/scss/utilities";
+
+@import "~bootstrap/scss/reboot";
+@import "~bootstrap/scss/grid";
+@import "~bootstrap/scss/card";
+@import "~bootstrap/scss/type";
+
+@import "~bootstrap-material-design/scss/layout";
+
+@import "~bootstrap-material-design/scss/cards";
+@import "~bootstrap-material-design/scss/type";
+@import "~bootstrap-material-design/scss/themes";
+
+
   .application {
     max-width: 100%;
     min-height: 100vh;

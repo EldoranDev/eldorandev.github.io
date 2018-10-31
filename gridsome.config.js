@@ -1,3 +1,5 @@
+let chainWebpack = require('./webpack.chain.js');
+
 module.exports = {
   siteName: "Marcel Behrmann",
   siteUrl: "https://www.marcelbehrmann.de",
@@ -28,5 +30,6 @@ module.exports = {
         typeName: 'Project',
       }
     },
-  ]
+  ],
+  chainWebpack: chainWebpack,
 }
