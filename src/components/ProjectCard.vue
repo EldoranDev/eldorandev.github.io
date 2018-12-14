@@ -10,11 +10,14 @@
           <h6 class="card-subtitle mb-2 text-muted">{{ project.fields.date }}</h6>
           <div class="card-text" v-html="project.content"></div>
 
-          <app-link icon v-if="project.fields && project.fields.github" :href="project.fields.github">
+          <app-link icon v-if="project.fields && project.fields.link" :href="project.fields.link" style="margin-right: 10px;">
+            <i class="fa fa-globe"></i>
+          </app-link>
+          <app-link icon v-if="project.fields && project.fields.github" :href="project.fields.github" style="margin-right: 10px;">
             <i class="fa fa-github"></i>
           </app-link>
-          <app-link icon v-if="project.fields && project.fields.link" :href="project.fields.link">
-            <i class="fa fa-globe"></i>
+          <app-link icon v-if="project.fields && project.fields.gitlab" :href="project.fields.gitlab" style="margin-right: 10px;">
+            <i class="fa fa-gitlab"></i>
           </app-link>
         </div>
       </div>

@@ -84,6 +84,7 @@ query Project {
           image,
           date,
           github,
+          gitlab,
           link,
         }
       }
