@@ -7,16 +7,16 @@
         </div>
         <div class="card-body">
           <h5 class="card-title">{{ project.title }}</h5>
-          <h6 class="card-subtitle mb-2 text-muted">{{ project.fields.date }}</h6>
+          <h6 class="card-subtitle mb-2 text-muted">{{ project.date }}</h6>
           <div class="card-text" v-html="project.content"></div>
 
-          <app-link icon v-if="project.fields && project.fields.link" :href="project.fields.link" style="margin-right: 10px;">
+          <app-link icon v-if="project.link" :href="project.link" style="margin-right: 10px;">
             <i class="fa fa-globe"></i>
           </app-link>
-          <app-link icon v-if="project.fields && project.fields.github" :href="project.fields.github" style="margin-right: 10px;">
+          <app-link icon v-if="project.github" :href="project.github" style="margin-right: 10px;">
             <i class="fa fa-github"></i>
           </app-link>
-          <app-link icon v-if="project.fields && project.fields.gitlab" :href="project.fields.gitlab" style="margin-right: 10px;">
+          <app-link icon v-if="project.gitlab" :href="project.gitlab" style="margin-right: 10px;">
             <i class="fa fa-gitlab"></i>
           </app-link>
         </div>
@@ -35,7 +35,7 @@ export default {
     },
     computed: {
       imageStyle() {
-        return `background: url(${this.project.fields.image});`
+        return `background: url(${this.project.image.src});`
       }
     },
     components: {
