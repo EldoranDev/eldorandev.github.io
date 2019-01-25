@@ -23,7 +23,7 @@
         </div>
       </div>
       <div class="col-l-6 col-xl-6 mt-3 offset-xl-1">
-        <project-card v-for="edge in $page.allProject.edges" :key="edge.node._id" :project="edge.node" />            
+        <project-card v-for="edge in $page.allProject.edges" :key="edge.node.id" :project="edge.node" />            
       </div>
     </div>
   </Layout>
@@ -76,17 +76,15 @@ query Project {
   allProject (order: DESC) {
     edges {
       node {
-        _id,
+        id,
         title,
         path,
         content,
-        fields {
-          image,
-          date,
-          github,
-          gitlab,
-          link,
-        }
+        image,
+        date,
+        github,
+        gitlab,
+        link,
       }
     }
   }
