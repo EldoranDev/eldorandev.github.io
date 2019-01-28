@@ -7,7 +7,7 @@
         </div>
         <div class="card-body">
           <h5 class="card-title">{{ project.title }}</h5>
-          <h6 class="card-subtitle mb-2 text-muted">{{ project.date }}</h6>
+          <h6 class="card-subtitle mb-2 text-muted">{{ date }}</h6>
           <div class="card-text" v-html="project.content"></div>
 
           <app-link icon v-if="project.link" :href="project.link" style="margin-right: 10px;">
@@ -36,6 +36,9 @@ export default {
     computed: {
       imageStyle() {
         return `background: url(${this.project.image.src});`
+      },
+      date() {
+        return new Date(this.project.date).toLocaleDateString("de-DE", {day: "2-digit", month: "2-digit", year: "numeric"});
       }
     },
     components: {
