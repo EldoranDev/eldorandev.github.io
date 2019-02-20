@@ -35,7 +35,7 @@ export default {
     },
     computed: {
       imageStyle() {
-        return `background: url(${this.project.image});`
+        return `background: url(${this.project.image.src});`
       },
       date() {
         return new Date(this.project.date).toLocaleDateString("de-DE", {day: "2-digit", month: "2-digit", year: "numeric"});
