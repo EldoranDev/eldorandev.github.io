@@ -1,0 +1,7 @@
+.layout {
+    @apply dark:bg-gray-900 dark:text-white;
+}
+
+a {
+    @apply text-blue-400 hover:text-blue-600 hover:underline;
+}

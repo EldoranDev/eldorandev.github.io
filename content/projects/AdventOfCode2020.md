@@ -1,6 +1,7 @@
 ---
 title: AdventOfCode 2020
 createdAt: 2020-12-01
+image: images/projects/aoc2020.png
 github: https://github.com/EldoranDev/AdventOfCode
 ---
 
