@@ -17,6 +17,8 @@
                 <TwitterLogo class="profile-icon"/>
             </a>
         </div>
+
+        <theme-switcher />
     </div>
 </template>
 
@@ -56,7 +58,7 @@ export default {
     }
 
     .social-profiles {
-        @apply flex justify-between mx-10 mt-3;
+        @apply flex justify-between mx-10 my-3;
         max-width: 300px;
         min-width: 300px;
 
