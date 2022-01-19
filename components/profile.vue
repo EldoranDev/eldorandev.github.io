@@ -2,7 +2,7 @@
     <div class="profile">
         <img
             class="avatar" 
-            src="https://www.marcelbehrmann.de/assets/static/avatar.a0d7643.414128610abe2acb70eba0c7cd6a7de0.jpg"
+            src="/images/avatar.jpg"
         />
         <p class="profile-name">Marcel Behrmann</p>
         <p class="profile-sub">Games & Apps </p>
