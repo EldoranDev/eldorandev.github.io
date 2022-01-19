@@ -1,26 +1,23 @@
 <template>
     <div class="row">
-      <aside class="left-column">
-        <profile />
-      </aside>
-      <main class="right-column">
-        <project
-          v-for="project in projects"
-          :key="project.slug"
-          :project="project" 
-        />
-      </main>
+        <aside class="left-column">
+            <profile />
+        </aside>
+        <main class="right-column">
+            <article-intro v-for="article in articles" :key="article.slug" :article="article" />
+        </main>
     </div>
 </template>
 
 <script>
 export default {
   async asyncData({ $content }) {
-    const projects = await $content('/projects').sortBy('createdAt', 'desc').fetch();
+    const articles = await $content('/blog').sortBy('createdAt', 'desc').fetch();
 
+    console.log(articles);
     return {
-      projects
-    };
+      articles
+    };  
   },
 }
 </script>

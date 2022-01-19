@@ -18,6 +18,8 @@
             </a>
         </div>
 
+        <!-- <nuxt-link to="/blog">Blog</nuxt-link> -->
+
         <theme-switcher />
     </div>
 </template>
@@ -51,10 +53,6 @@ export default {
     
     .profile-name {
         @apply text-3xl font-normal my-2;
-    }
-
-    .profile-sub {
-        
     }
 
     .social-profiles {

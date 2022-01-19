@@ -74,6 +74,7 @@
     }
 
     .card-img-top {
+        @apply rounded-sm;
         border-top-left-radius: inherit;
         border-top-right-radius: inherit;
         overflow: hidden;
