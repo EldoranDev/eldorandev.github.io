@@ -15,7 +15,7 @@
     "@nuxtjs/sitemap": "^2.4.0",
     "@nuxtjs/svg": "^0.3.0",
     "core-js": "^3.15.1",
-    "nuxt": "^2.15.7",
+    "nuxt": "^2.16.0",
     "vue-svg-loader": "^0.16.0"
   },
   "devDependencies": {
@@ -28,7 +28,7 @@
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-nuxt": "^2.0.0",
     "eslint-plugin-vue": "^7.12.1",
-    "postcss": "^8.3.5",
+    "postcss": "^8.4.33",
     "prettier": "^2.3.2"
   }
 }
