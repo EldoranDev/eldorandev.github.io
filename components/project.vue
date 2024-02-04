@@ -6,16 +6,16 @@
         <div class="card-body">
             <h2 class="card-body-title">{{ project.title }}</h2>
             <time class="card-body-subtitle">{{ date }}</time>
-            <nuxt-content class="card-text" :document="project" />
+            <ContentRenderer class="card-text" :value="project" />
 
-            <a 
-                v-if="project.github" 
+            <a
+                v-if="project.github"
                 :href="project.github"
-                
+
                 target="__blank"
                 class="card-link"
             >
-                <GithubLogo />
+              <nuxt-icon name="github" />
             </a>
 
             <a
@@ -25,7 +25,7 @@
                 target="__blank"
                 class="card-link"
             >
-                <GitlabLogo />
+              <nuxt-icon name="gitlab" />
             </a>
 
             <a
@@ -35,32 +35,16 @@
                 target="__blank"
                 class="card-link"
             >
-                <LinkLogo />
+              <nuxt-icon name="link" />
             </a>
         </div>
     </article>
 </template>
 
-<script>
-    import GithubLogo from '~/assets/icons/github.svg?inline';
-    import GitlabLogo from '~/assets/icons/gitlab.svg?inline';
-    import LinkLogo from '~/assets/icons/link.svg?inline';
+<script setup lang="ts">
+  const { project } = defineProps(["project"])
 
-    export default {
-        props: {
-            project: Object
-        },
-        components: {
-            GithubLogo,
-            GitlabLogo,
-            LinkLogo,
-        },
-        computed: {
-            date() { 
-                return new Date(this.project.createdAt).toLocaleDateString("de-DE", {month: "long", year: "numeric"});
-            }
-        }
-    }
+  const date = new Date(project.createdAt).toLocaleDateString("de-DE", {month: "long", year: "numeric" });
 </script>
 
 <style lang="postcss">

@@ -1,3 +1,12 @@
+<script setup>
+// const { data } = await useAsyncData('projects', () => queryContent('/projects'))
+
+const projects = await queryContent('projects')
+  .sort({ 'createdAt': -1 })
+  .find()
+
+</script>
+
 <template>
     <div class="row">
       <aside class="left-column">
@@ -7,23 +16,11 @@
         <project
           v-for="project in projects"
           :key="project.slug"
-          :project="project" 
+          :project="project"
         />
       </main>
     </div>
 </template>
-
-<script>
-export default {
-  async asyncData({ $content }) {
-    const projects = await $content('/projects').sortBy('createdAt', 'desc').fetch();
-
-    return {
-      projects
-    };
-  },
-}
-</script>
 
 <style lang="postcss">
   .left-column {

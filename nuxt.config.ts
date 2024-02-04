@@ -1,9 +1,6 @@
-export default {
-  // Target: https://go.nuxtjs.dev/config-target
-  target: 'static',
-
+export default defineNuxtConfig({
   // Global page headers: https://go.nuxtjs.dev/config-head
-  head: {
+  /*head: {
     title: 'Marcel Behrmann',
     htmlAttrs: {
       lang: 'en'
@@ -17,7 +14,7 @@ export default {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
-  },
+  },*/
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
@@ -28,29 +25,14 @@ export default {
   plugins: [
   ],
 
-  // Auto import components: https://go.nuxtjs.dev/config-components
-  components: true,
-
-  // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: [
-    // https://go.nuxtjs.dev/eslint
-    '@nuxtjs/eslint-module',
-    // https://go.nuxtjs.dev/tailwindcss
-    '@nuxtjs/tailwindcss',
-    "@nuxtjs/svg",
-    "@nuxt/image",
-  ],
-
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
+    // https://go.nuxtjs.dev/tailwindcss
+    '@nuxtjs/tailwindcss',
+    // "@nuxtjs/svg",
+    "@nuxt/image",
+    'nuxt-icons'
   ],
-
-  // Content module configuration: https://go.nuxtjs.dev/config-content
-  content: {},
-
-  // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {
-  }
-}
+});

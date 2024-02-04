@@ -1,20 +1,20 @@
 <template>
     <div class="profile">
         <img
-            class="avatar" 
+            class="avatar"
             src="/images/avatar.jpg"
         />
         <p class="profile-name">Marcel Behrmann</p>
         <p class="profile-sub">Games & Apps </p>
         <div class="social-profiles">
             <a href="https://github.com/EldoranDev" target="_blank" rel="noopener">
-                <GitHubLogo class="profile-icon" />
+                <nuxt-icon name="github" class="profile-icon"/>
             </a>
-            <a href="https://github.com/EldoranDev" target="_blank" rel="noopener">
-                <XingLogo class="profile-icon" />
+            <a href="https://www.linkedin.com/in/marcel-behrmann/" target="_blank" rel="noopener">
+              <nuxt-icon name="linkedin" class="profile-icon" />
             </a>
             <a href="https://www.twitter.com/EldoranDev" target="_blank" rel="noopener">
-                <TwitterLogo class="profile-icon"/>
+              <nuxt-icon name="twitter" class="profile-icon" />
             </a>
         </div>
 
@@ -24,25 +24,11 @@
     </div>
 </template>
 
-<script>
-import GitHubLogo from '~/assets/icons/github.svg?inline';
-import TwitterLogo from '~/assets/icons/twitter.svg?inline';
-import XingLogo from '~/assets/icons/xing.svg?inline';
-
-export default {
-    components: {
-        GitHubLogo,
-        TwitterLogo,
-        XingLogo,
-    },
-}
-</script>
-
-<style lang="postcss" scoped>
+<style lang="postcss">
     .profile {
         @apply flex items-center flex-col;
     }
-    
+
     .avatar {
         @apply rounded-full shadow-md shadow-lg mx-auto;
         width: 125px;
@@ -50,7 +36,7 @@ export default {
 
         vertical-align: middle;
     }
-    
+
     .profile-name {
         @apply text-3xl font-normal my-2;
     }
@@ -72,5 +58,8 @@ export default {
         @apply w-9 h-9 relative inline-block text-black dark:text-white hover:text-blue-600;
         @apply hover:text-blue-600 !important;
     }
-  
+
+    .profile-icon svg {
+      @apply w-9 h-9
+  }
 </style>

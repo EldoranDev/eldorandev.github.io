@@ -1,7 +1,7 @@
 <template>
   <div class="layout ">
     <div class="content">
-        <Nuxt />
+        <NuxtPage />
     </div>
   </div>
 </template>
@@ -14,7 +14,7 @@
   .content {
     @apply container mx-auto px-4;
   }
-  
+
   .row {
     @apply flex flex-wrap flex-col xl:flex-row;
   }
