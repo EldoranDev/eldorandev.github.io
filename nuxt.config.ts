@@ -35,4 +35,11 @@ export default defineNuxtConfig({
     "@nuxt/image",
     'nuxt-icons'
   ],
+
+  hooks: {
+    async 'nitro:config'(cfg) {
+      cfg.prerender?.routes?.push('/saufster/manual');
+      cfg.prerender?.routes?.push('/saufster/more');
+    }
+  }
 });
