@@ -17,7 +17,7 @@ export default {
     console.log(articles);
     return {
       articles
-    };  
+    };
   },
 }
 </script>
