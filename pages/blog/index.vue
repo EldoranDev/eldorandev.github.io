@@ -1,7 +1,5 @@
 <script setup lang="ts">
 const articles = await queryContent('/blog').find();
-
-console.log(articles);
 </script>
 
 <template>
