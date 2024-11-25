@@ -1,5 +1,8 @@
 <template>
     <article class="article-intro">
+        <div class="card-img-top">
+            <div class="thumb-img" :style="`background: url('${article.cover}')`"></div>
+        </div>
         <span>{{ date }}</span>
         <h3 class="article-intro__title">{{ article.title }}</h3>
         <div>
@@ -20,7 +23,7 @@ export default {
         article: Object,
     },
     computed: {
-        date() { 
+        date() {
             return new Date(this.article.createdAt).toLocaleDateString("de-DE", {day: '2-digit', month: "long", year: "numeric"});
         }
     }

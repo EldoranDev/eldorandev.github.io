@@ -1,7 +1,7 @@
 ---
 title: "Global Game Jam 2019"
 description: "PostMortem of the GlobalGameJam 2019"
-cover: "/images/posts/2019-01-ggj/ggj-header.jpg"
+cover: "/images/posts/2019-01-ggj/ggj-header.png"
 createdAt: 2019-01-27 13:00:00
 slug: "ggj-2019"
 tags:

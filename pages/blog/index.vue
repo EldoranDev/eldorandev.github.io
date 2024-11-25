@@ -1,3 +1,9 @@
+<script setup lang="ts">
+const articles = await queryContent('/blog').find();
+
+console.log(articles);
+</script>
+
 <template>
     <div class="row">
         <aside class="left-column">
@@ -8,19 +14,6 @@
         </main>
     </div>
 </template>
-
-<script>
-export default {
-  async asyncData({ $content }) {
-    const articles = await $content('/blog').sortBy('createdAt', 'desc').fetch();
-
-    console.log(articles);
-    return {
-      articles
-    };
-  },
-}
-</script>
 
 <style lang="postcss">
   .left-column {

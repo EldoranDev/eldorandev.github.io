@@ -41,5 +41,6 @@ export default defineNuxtConfig({
       cfg.prerender?.routes?.push('/saufster/manual');
       cfg.prerender?.routes?.push('/saufster/more');
     }
-  }
+  },
+  compatibilityDate: '2024-11-25'
 });
