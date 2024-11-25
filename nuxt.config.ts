@@ -42,5 +42,18 @@ export default defineNuxtConfig({
       cfg.prerender?.routes?.push('/saufster/more');
     }
   },
-  compatibilityDate: '2024-11-25'
+  compatibilityDate: '2024-11-25',
+  vite: {
+    plugins: [
+      {
+        name: 'vite-plugin-glob-transform',
+        transform(code: string, id: string) {
+          if (id.includes('nuxt-icons')) {
+            return code.replace(/as:\s*['"]raw['"]/g, 'query: "?raw", import: "default"');
+          }
+          return code;
+        }
+      }
+    ]
+  }
 });

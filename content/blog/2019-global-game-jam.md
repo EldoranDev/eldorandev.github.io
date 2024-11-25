@@ -5,8 +5,8 @@ cover: "/images/posts/2019-01-ggj/ggj-header.png"
 createdAt: 2019-01-27 13:00:00
 slug: "ggj-2019"
 tags:
-    - Post Mortem
-    - GameDev
+    - post-mortem
+    - game-dev
 ---
 
 This is my post mortem of the Global Game Jam 2019. The result of my participation can be found here: [Getting in Trouble](https://globalgamejam.org/2019/games/getting-trouble).
