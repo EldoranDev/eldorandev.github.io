@@ -1,10 +1,22 @@
+<script setup lang="ts">
+import type { ParsedContent } from '@nuxt/content';
+
+const { article } = defineProps<{ article: ParsedContent}>();
+const date = new Date(article.createdAt).toLocaleDateString("de-DE", {day: '2-digit', month: "long", year: "numeric"});
+
+console.log(article);
+
+</script>
+
 <template>
     <article class="article-intro">
         <div class="card-img-top">
             <div class="thumb-img" :style="`background: url('${article.cover}')`"></div>
         </div>
         <span>{{ date }}</span>
-        <h3 class="article-intro__title">{{ article.title }}</h3>
+        <h3 class="article-intro__title">
+          <a :href="article._path">{{ article.title }}</a>
+        </h3>
         <div>
             <tag
                 v-for="tag in article.tags"
@@ -16,19 +28,6 @@
         </div>
     </article>
 </template>
-
-<script>
-export default {
-    props: {
-        article: Object,
-    },
-    computed: {
-        date() {
-            return new Date(this.article.createdAt).toLocaleDateString("de-DE", {day: '2-digit', month: "long", year: "numeric"});
-        }
-    }
-}
-</script>
 
 <style lang="postcss">
     .article-intro {
