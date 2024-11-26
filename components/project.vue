@@ -28,6 +28,15 @@
               <nuxt-icon name="gitlab" />
             </a>
 
+            <nuxt-link
+              v-if="project.blog"
+              :href="project.blog"
+
+              class="card-link"
+            >
+              <nuxt-icon name="blog" />
+            </nuxt-link>
+
             <a
                 v-if="project.link"
                 :href="project.link"

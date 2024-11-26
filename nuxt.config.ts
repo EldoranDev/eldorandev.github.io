@@ -25,16 +25,21 @@ export default defineNuxtConfig({
   plugins: [
   ],
 
+  content: {
+    highlight: {
+      langs: ['csharp', 'go'],
+      theme: {
+        default: 'github-light',
+        dark: 'github-dark',
+      }
+    }
+  },
+
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [
-    // https://go.nuxtjs.dev/content
-    '@nuxt/content',
-    // https://go.nuxtjs.dev/tailwindcss
-    '@nuxtjs/tailwindcss',
-    // "@nuxtjs/svg",
-    "@nuxt/image",
-    'nuxt-icons'
-  ],
+  modules: [// https://go.nuxtjs.dev/content
+  '@nuxt/content', // https://go.nuxtjs.dev/tailwindcss
+  '@nuxtjs/tailwindcss', // "@nuxtjs/svg",
+  "@nuxt/image", 'nuxt-icons', '@nuxt/fonts'],
 
   hooks: {
     async 'nitro:config'(cfg) {
@@ -42,5 +47,18 @@ export default defineNuxtConfig({
       cfg.prerender?.routes?.push('/saufster/more');
     }
   },
-  compatibilityDate: '2024-11-25'
+  compatibilityDate: '2024-11-25',
+  vite: {
+    plugins: [
+      {
+        name: 'vite-plugin-glob-transform',
+        transform(code: string, id: string) {
+          if (id.includes('nuxt-icons')) {
+            return code.replace(/as:\s*['"]raw['"]/g, 'query: "?raw", import: "default"');
+          }
+          return code;
+        }
+      }
+    ]
+  }
 });

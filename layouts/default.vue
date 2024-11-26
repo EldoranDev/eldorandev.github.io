@@ -7,6 +7,16 @@
 </template>
 
 <style lang="postcss">
+  html {
+    font-family: Roboto, sans-serif;
+  }
+
+  pre {
+    font-family: Fira Code, ui-monospace;
+
+    @apply text-base;
+  }
+
   .layout {
     @apply min-h-screen min-w-full;
   }

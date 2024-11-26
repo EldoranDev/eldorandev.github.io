@@ -42,7 +42,13 @@
     @apply my-5;
   }
 
+  ol {
+    @apply list-decimal;
+  }
+
   div.content {
     @apply p-0 lg:text-lg leading-4;
+
+    font-family: Calibri;
   }
 </style>
