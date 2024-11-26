@@ -11,6 +11,9 @@ tags:
 Since the release of [Matt Parkers Video](https://www.youtube.com/watch?v=TvlpIojusBE) it became a tradition for me, that at some point in November I start tinkering
 with my overly overegineered fairy lights of my christmas tree. Like the lights from the inspiring video, I am using ws2811 LED's that are controlled by a raspberry pi.
 
+- [XMAS-PI](https://github.com/EldoranDev/xmaspi) (golang - interaction with ws2811)
+- [ChristmasPortal](https://github.com/EldoranDev/ChristmasPortal) (csharp - interaction with lego toypad)
+
 This year two additions where made to the existing infrastructure:
 
 1. Moving away from a custom user interface in favor of HomeAssistant integration
