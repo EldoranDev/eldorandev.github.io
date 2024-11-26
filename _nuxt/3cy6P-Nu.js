@@ -1,1 +1,0 @@
-import{_ as t,o,c,a as s,b as a,am as n}from"./D4CL72dO.js";const _={},r={class:"layout"},d={class:"content"};function l(f,i){const e=n;return o(),c("div",r,[s("div",d,[a(e)])])}const u=t(_,[["render",l]]);export{u as default};
