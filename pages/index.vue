@@ -1,10 +1,5 @@
-<script setup>
-// const { data } = await useAsyncData('projects', () => queryContent('/projects'))
-
-const projects = await queryContent('projects')
-  .sort({ 'createdAt': -1 })
-  .find()
-
+<script setup lang="ts">
+const { data: projects } = await useAsyncData(() => queryCollection('projects').order("date", 'DESC').all());
 </script>
 
 <template>
@@ -15,7 +10,7 @@ const projects = await queryContent('projects')
       <main class="right-column">
         <project
           v-for="project in projects"
-          :key="project.slug"
+          :key="project.meta.slug"
           :project="project"
         />
       </main>

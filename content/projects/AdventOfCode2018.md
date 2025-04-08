@@ -1,7 +1,7 @@
 ---
 title: Advent of Code 2018
 image: "/images/projects/aoc2018.png"
-createdAt: "2018-12-01"
+date: "2018-12-01"
 link: "https://eldorandev.gitlab.io/adventofcode"
 gitlab: "https://gitlab.com/EldoranDev/adventofcode"
 ---

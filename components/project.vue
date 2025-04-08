@@ -53,7 +53,7 @@
 <script setup lang="ts">
   const { project } = defineProps(["project"])
 
-  const date = new Date(project.createdAt).toLocaleDateString("de-DE", {month: "long", year: "numeric" });
+  const date = new Date(project.date).toLocaleDateString("de-DE", {month: "long", year: "numeric" });
 </script>
 
 <style lang="postcss">

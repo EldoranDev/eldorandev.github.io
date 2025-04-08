@@ -2,7 +2,7 @@
 import type { ParsedContent } from '@nuxt/content';
 
 const { article } = defineProps<{ article: ParsedContent}>();
-const date = new Date(article.createdAt).toLocaleDateString("de-DE", {day: '2-digit', month: "long", year: "numeric"});
+const date = new Date(article.date).toLocaleDateString("de-DE", {day: '2-digit', month: "long", year: "numeric"});
 
 console.log(article);
 

@@ -1,4 +1,8 @@
 <script setup lang="ts">
+const route = useRoute();
+const { data: doc } = await useAsyncData(route.path, () => {
+  return queryCollection('blog').path(route.path).first();
+});
 </script>
 
 <template>
@@ -7,16 +11,14 @@
       <profile />
     </aside>
     <main class="right-column">
-      <ContentDoc v-slot="{ doc }">
-        <article>
-          <h1>{{  doc.title }}</h1>
-          <BlogSummary :content="doc" />
-          <div class="relative not-prose rounded-2xl overflow-hidden" v-if="doc.cover">
-            <img :src="doc.cover" decoding="async"/>
-          </div>
-          <ContentRendererMarkdown :value="doc" class="content"/>
-        </article>
-      </ContentDoc>
+      <article v-if="doc">
+        <h1>{{  doc.title }}</h1>
+        <BlogSummary :content="doc" />
+        <div class="relative not-prose rounded-2xl overflow-hidden" v-if="doc.cover">
+          <img :src="doc.cover" decoding="async"/>
+        </div>
+        <ContentRenderer :value="doc" class="content"/>
+      </article>
     </main>
   </div>
 </template>

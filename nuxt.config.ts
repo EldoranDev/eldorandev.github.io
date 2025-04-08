@@ -26,13 +26,7 @@ export default defineNuxtConfig({
   ],
 
   content: {
-    highlight: {
-      langs: ['csharp', 'go'],
-      theme: {
-        default: 'github-light',
-        dark: 'github-dark',
-      }
-    }
+
   },
 
   // Modules: https://go.nuxtjs.dev/config-modules

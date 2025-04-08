@@ -1,7 +1,7 @@
 ---
 title: Getting in Trouble
 image: "/images/projects/gettingintrouble.png"
-createdAt: "2019-01-27"
+date: "2019-01-27"
 link: "https://globalgamejam.org/2019/games/getting-trouble"
 ---
 

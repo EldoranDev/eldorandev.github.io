@@ -1,6 +1,6 @@
 ---
 title: XMAS-PI 2024
-createdAt: 2024-11-25
+date: 2024-11-25
 image: images/projects/2024-xmaspi.png
 github: https://github.com/EldoranDev/xmaspi
 blog: "/blog/2024-xmas-pi"

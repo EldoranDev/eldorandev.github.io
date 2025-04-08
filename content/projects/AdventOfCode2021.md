@@ -1,6 +1,6 @@
 ---
 title: AdventOfCode 2021
-createdAt: 2021-12-01
+date: 2021-12-01
 image: images/projects/aoc2021.png
 github: https://github.com/EldoranDev/AdventOfCode
 ---

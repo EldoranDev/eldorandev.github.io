@@ -1,7 +1,7 @@
 ---
 title: RepairDefense
 image: "/images/projects/repairdefense.png"
-createdAt: "2020-02-02"
+date: "2020-02-02"
 link: "https://globalgamejam.org/2020/games/repairdefense-8"
 github: "https://github.com/EldoranDev/GGJ2020"
 ---

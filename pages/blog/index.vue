@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const articles = await queryContent('/blog').find();
+const articles = await queryCollection('blog').all();
 </script>
 
 <template>

@@ -1,7 +1,7 @@
 ---
 title: CSLox
 image: "/images/projects/cslox.png"
-createdAt: "2017-11-06"
+date: "2017-11-06"
 github: https://github.com/EldoranDev/cslox
 ---
 

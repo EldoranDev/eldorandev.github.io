@@ -1,7 +1,7 @@
 ---
 title: Spatholobus
 image: "/images/projects/spatholobus.png"
-createdAt: "2018-01-25"
+date: "2018-01-25"
 link: "https://globalgamejam.org/2018/games/spatholobus"
 ---
 
