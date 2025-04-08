@@ -15,7 +15,7 @@ export default {
 };
 </script>
 
-<style lang="postcss">
+<style lang="postcss" scoped>
     .tag {
         @apply bg-gray-500 text-gray-300 rounded-full px-2 py-1 m-1;
     }

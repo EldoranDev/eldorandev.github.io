@@ -8,13 +8,10 @@
         <p class="profile-sub">Games & Apps </p>
         <div class="social-profiles">
             <a href="https://github.com/EldoranDev" target="_blank" rel="noopener">
-                <nuxt-icon name="github" class="profile-icon"/>
+                <Icon name="fa6-brands:github-square" class="profile-icon" size="2.25rem"/>
             </a>
             <a href="https://www.linkedin.com/in/marcel-behrmann/" target="_blank" rel="noopener">
-              <nuxt-icon name="linkedin" class="profile-icon" />
-            </a>
-            <a href="https://www.twitter.com/EldoranDev" target="_blank" rel="noopener">
-              <nuxt-icon name="twitter" class="profile-icon" />
+              <Icon name="fa6-brands:linkedin" class="profile-icon" />
             </a>
         </div>
 
@@ -24,7 +21,7 @@
     </div>
 </template>
 
-<style lang="postcss">
+<style lang="postcss" scoped>
     .profile {
         @apply flex items-center flex-col;
     }
@@ -58,8 +55,4 @@
         @apply w-9 h-9 relative inline-block text-black dark:text-white hover:text-blue-600;
         @apply hover:text-blue-600 !important;
     }
-
-    .profile-icon svg {
-      @apply w-9 h-9
-  }
 </style>

@@ -5,7 +5,7 @@
         </span>
         <button
             type="button"
-            role="switch" 
+            role="switch"
             aria-checked="false"
 
             :class="buttonClasses"
@@ -73,7 +73,7 @@ export default {
 }
 </script>
 
-<style lang="postcss">
+<style lang="postcss" scoped>
     .theme-switcher {
         @apply my-1 flex;
     }

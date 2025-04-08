@@ -23,7 +23,7 @@ const { data: doc } = await useAsyncData(route.path, () => {
   </div>
 </template>
 
-<style lang="postcss">
+<style lang="postcss" scoped>
   h1 {
     @apply text-3xl font-extrabold leading-tight text-gray-900 lg:mb-1 lg:text-4xl dark:text-white;
   }
@@ -41,16 +41,16 @@ const { data: doc } = await useAsyncData(route.path, () => {
   }
 
   p {
-    @apply my-5;
+    @apply my-4;
   }
 
   ol {
-    @apply list-decimal;
+    @apply list-decimal my-4;
   }
 
   div.content {
     @apply p-0 lg:text-lg leading-4;
 
-    font-family: Calibri;
+    text-align: justify;
   }
 </style>

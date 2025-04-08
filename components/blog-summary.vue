@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import type { ParsedContent } from '@nuxt/content';
+import type { BlogCollectionItem } from '@nuxt/content';
 
-  const { content } = defineProps<{ content: ParsedContent}>();
+  const { content } = defineProps<{ content: BlogCollectionItem}>();
 </script>
 
 <template>

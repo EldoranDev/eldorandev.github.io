@@ -15,7 +15,7 @@
                 target="__blank"
                 class="card-link"
             >
-              <nuxt-icon name="github" />
+              <Icon name="fa6-brands:github" size="1.5rem"/>
             </a>
 
             <a
@@ -25,7 +25,7 @@
                 target="__blank"
                 class="card-link"
             >
-              <nuxt-icon name="gitlab" />
+              <Icon name="fa6-brands:gitlab" size="1.5rem" />
             </a>
 
             <nuxt-link
@@ -34,7 +34,7 @@
 
               class="card-link"
             >
-              <nuxt-icon name="blog" />
+              <Icon name="mdi:blog-outline" size="1.5rem"/>
             </nuxt-link>
 
             <a
@@ -44,7 +44,7 @@
                 target="__blank"
                 class="card-link"
             >
-              <nuxt-icon name="link" />
+              <Icon name="fa6-solid:arrow-up-right-from-square" size="1.5rem"/>
             </a>
         </div>
     </article>
@@ -56,7 +56,7 @@
   const date = new Date(project.date).toLocaleDateString("de-DE", {month: "long", year: "numeric" });
 </script>
 
-<style lang="postcss">
+<style lang="postcss" scoped>
     .card {
         @apply shadow-md rounded-sm flex flex-col relative bg-white mb-3 dark:bg-gray-800;
     }
@@ -97,9 +97,6 @@
     .card-link {
         @apply text-black dark:text-white inline-block;
         @apply hover:text-blue-600 !important;
-    }
-
-    .card-link svg {
-        @apply w-9 h-9
+        @apply mr-1;
     }
 </style>

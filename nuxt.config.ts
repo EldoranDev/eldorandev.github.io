@@ -31,10 +31,9 @@ export default defineNuxtConfig({
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [// https://go.nuxtjs.dev/content
-  '@nuxt/content', // https://go.nuxtjs.dev/tailwindcss
-  '@nuxtjs/tailwindcss', // "@nuxtjs/svg",
-  "@nuxt/image", 'nuxt-icons', '@nuxt/fonts'],
-
+  // https://go.nuxtjs.dev/tailwindcss
+  '@nuxt/content', // "@nuxtjs/svg",
+  '@nuxtjs/tailwindcss', "@nuxt/image", '@nuxt/fonts', '@nuxt/icon'],
   hooks: {
     async 'nitro:config'(cfg) {
       cfg.prerender?.routes?.push('/saufster/manual');

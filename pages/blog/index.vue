@@ -8,12 +8,12 @@ const articles = await queryCollection('blog').all();
             <profile />
         </aside>
         <main class="right-column">
-            <article-intro v-for="article in articles" :key="article.slug" :article="article" />
+            <article-intro v-for="article in articles" :key="article.id" :article="article" />
         </main>
     </div>
 </template>
 
-<style lang="postcss">
+<style lang="postcss" scoped>
   .left-column {
     @apply relative mt-4 text-center;
   }

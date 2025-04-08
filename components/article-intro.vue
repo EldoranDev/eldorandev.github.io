@@ -29,7 +29,7 @@ console.log(article);
     </article>
 </template>
 
-<style lang="postcss">
+<style lang="postcss" scoped>
     .article-intro {
         @apply flex flex-col items-center;
     }

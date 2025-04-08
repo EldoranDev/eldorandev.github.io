@@ -10,14 +10,18 @@ const { data: projects } = await useAsyncData(() => queryCollection('projects').
       <main class="right-column">
         <project
           v-for="project in projects"
-          :key="project.meta.slug"
+          :key="project.id"
           :project="project"
         />
       </main>
     </div>
 </template>
 
-<style lang="postcss">
+<style lang="postcss" scoped>
+  * {
+    @apply font-sans;
+  }
+
   .left-column {
     @apply relative mt-4 text-center;
   }
