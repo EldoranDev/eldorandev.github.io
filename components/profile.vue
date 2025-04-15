@@ -8,7 +8,7 @@
         <p class="profile-sub">Games & Apps </p>
         <div class="social-profiles">
             <a href="https://github.com/EldoranDev" target="_blank" rel="noopener">
-                <Icon name="fa6-brands:github-square" class="profile-icon" size="2.25rem"/>
+                <Icon name="fa6-brands:github-square" class="profile-icon"/>
             </a>
             <a href="https://www.linkedin.com/in/marcel-behrmann/" target="_blank" rel="noopener">
               <Icon name="fa6-brands:linkedin" class="profile-icon" />
@@ -40,8 +40,8 @@
 
     .social-profiles {
         @apply flex justify-between mx-10 my-3;
-        max-width: 300px;
-        min-width: 300px;
+        max-width: 250px;
+        min-width: 250px;
 
         justify-self: center;
 
