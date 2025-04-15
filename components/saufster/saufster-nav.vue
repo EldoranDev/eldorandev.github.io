@@ -1,5 +1,8 @@
 <script setup lang="ts">
-const navigation = await fetchContentNavigation(queryContent('/saufster'))
+
+//const navigation = await fetchContentNavigation(queryContent('/saufster'))
+
+const navigation = [ { children: [ {_path: "", title: ""}] }];
 </script>
 
 <template>

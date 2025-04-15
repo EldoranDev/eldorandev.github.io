@@ -27,7 +27,9 @@ To remove complexity from the application, while also allowing for automations, 
 
 This caused a major rewrite of the application as a very big chunk of the current code could get removed in favor of a much leaner alternative. Everything related to interaction with the service (`grpc`, `rest-api`) got replaced by  the [AutoPaho](https://github.com/eclipse-paho/paho.golang/tree/master/autopaho) MQTT client, which handles connection, automatic reconnection and subscriptions. Adding discovery messages according to the [HomeAssistant documentation](https://www.home-assistant.io/integrations/mqtt/#mqtt-discovery) allows the service to automatically show up in the managed devices without any extra configuration.
 
+<!--
 ![screenshot from homeassistant device overview](images/posts/2024-xmaspi/mqtt-discovery.png)
+-->
 
 This already allows full control through home assistant, like automaticly turning the leds on/off based on some conditions.
 
