@@ -24,27 +24,27 @@ const { data: doc } = await useAsyncData(route.path, () => {
 </template>
 
 <style lang="postcss" scoped>
-  h1 {
+  :deep() h1 {
     @apply text-3xl font-extrabold leading-tight text-gray-900 lg:mb-1 lg:text-4xl dark:text-white;
   }
 
-  h2 {
+  :deep() h2 {
     @apply mb-3 text-2xl lg:text-3xl font-semibold;
   }
 
-  h2 > a, h3 > a {
+  :deep() h2 > a, h3 > a {
     @apply text-black dark:text-white;
   }
 
-  h3 {
+  :deep() h3 {
     @apply mb-2 text-xl lg:text-2xl;
   }
 
-  p {
+  :deep() p {
     @apply my-4;
   }
 
-  ol {
+  :deep() ol {
     @apply list-decimal my-4;
   }
 
