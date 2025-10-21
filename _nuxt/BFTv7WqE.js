@@ -1,1 +1,0 @@
-import{_ as t,c as o,o as c,a as s,b as a,ao as n}from"./Djlpikqi.js";const _={},r={class:"layout"},d={class:"content"};function l(f,i){const e=n;return c(),o("div",r,[s("div",d,[a(e)])])}const m=t(_,[["render",l]]);export{m as default};

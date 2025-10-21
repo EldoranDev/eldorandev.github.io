@@ -1,0 +1,1 @@
+import{_ as o}from"./KQTcDzIC.js";import{_ as a,c,o as n,a as _,b as e,ap as r}from"#entry";const m={},p={class:"px-6 py-10 lg:px-8 bg-slate-800"},x={class:"mx-auto max-w-3xl text-base leading-7 text-slate-200"};function l(d,i){const t=o,s=r;return n(),c("div",p,[_("div",x,[e(t,{src:"images/saufster/logo.png"}),e(s)])])}const g=a(m,[["render",l]]);export{g as default};
