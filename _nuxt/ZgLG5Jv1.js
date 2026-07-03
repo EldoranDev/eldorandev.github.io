@@ -1,1 +1,0 @@
-import{_ as t,o,c,a as s,b as a,au as n}from"./BTsp98O5.js";const _={},r={class:"layout"},d={class:"content"};function l(u,f){const e=n;return o(),c("div",r,[s("div",d,[a(e)])])}const m=t(_,[["render",l]]);export{m as default};
