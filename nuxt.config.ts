@@ -34,6 +34,13 @@ export default defineNuxtConfig({
     },
   },
 
+  colorMode: {
+    preference: "system",
+    fallback: "light",
+    storage: "localStorage",
+    storageKey: "theme",
+  },
+
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     "@nuxt/content",
@@ -41,6 +48,7 @@ export default defineNuxtConfig({
     "@nuxt/image",
     "@nuxt/fonts",
     "@nuxt/icon",
+    "@nuxtjs/color-mode",
   ],
   compatibilityDate: "2026-07-03",
 });
