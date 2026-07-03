@@ -1,1 +1,0 @@
-import{_ as t,c as o,o as c,a as s,b as a,ap as n}from"#entry";const _={},r={class:"layout"},d={class:"content"};function l(f,i){const e=n;return c(),o("div",r,[s("div",d,[a(e)])])}const u=t(_,[["render",l]]);export{u as default};
