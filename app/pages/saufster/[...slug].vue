@@ -1,8 +1,7 @@
 <script setup lang="ts">
 definePageMeta({
-  layout: 'saufster',
+  layout: "saufster",
 });
-
 </script>
 
 <template>

@@ -5,8 +5,8 @@ cover: "/images/posts/2019-01-ggj/ggj-header.png"
 date: 2019-01-27 13:00:00
 slug: "ggj-2019"
 tags:
-    - post-mortem
-    - game-dev
+  - post-mortem
+  - game-dev
 ---
 
 This is my post mortem of the Global Game Jam 2019. The result of my participation can be found here: [Getting in Trouble](https://globalgamejam.org/2019/games/getting-trouble).
@@ -29,7 +29,7 @@ We agreed on finishing up at 16.00 as we did not want to miss our uploading wind
 
 ## Learnings
 
-I think, the thing that will stay in my head the most is that you should __sleep__. When people told me that I should sleep while doing jams/hackathons, I thought that they are crazy. But now that I actually slept and made breaks I know that this is actually the best thing you can do.
+I think, the thing that will stay in my head the most is that you should **sleep**. When people told me that I should sleep while doing jams/hackathons, I thought that they are crazy. But now that I actually slept and made breaks I know that this is actually the best thing you can do.
 
 The second thing is, that you should not go to a jam with the expectation that you will create a game.
 You should not expect to finish or get as far as you want. The only goal of the jam should be having fun, meeting people and try stuff.
@@ -42,26 +42,26 @@ And lastly, even if the jam is only 48h like the GGJ, do some sort of project pl
 
 ### Day 01
 
-__17:00__ - *Opening Keynote*  
-__17:30__ - *Brainstorming session*  
-__18:20__ - *Presentation of brainstorming results*  
-__19:00__ - *First start of the Unity Editor*  
-__19:41__ - *Eating/Planing break*  
-__02:46__ - *Sleeping break*  
+**17:00** - _Opening Keynote_  
+**17:30** - _Brainstorming session_  
+**18:20** - _Presentation of brainstorming results_  
+**19:00** - _First start of the Unity Editor_  
+**19:41** - _Eating/Planing break_  
+**02:46** - _Sleeping break_
 
 ### Day 02
 
-__09:00__ - *Brainstorming session*  
-__09:35__ - *Sport Break*  
-__12:15__ - *Go !!!*  
-__17:45__ - *Half Time Break (Eating, Fresh Air)*  
-__18:25__ - *Sushi Order*  
-__20:00__ - *Sushi Break*  
-__20:50__ - *Go !!!!*  
-__02:00__ - *Sleep*  
+**09:00** - _Brainstorming session_  
+**09:35** - _Sport Break_  
+**12:15** - _Go !!!_  
+**17:45** - _Half Time Break (Eating, Fresh Air)_  
+**18:25** - _Sushi Order_  
+**20:00** - _Sushi Break_  
+**20:50** - _Go !!!!_  
+**02:00** - _Sleep_
 
 ### Day 03
 
-__09:00__ - *Go !!!!*  
-__16:10__ - *First time we hit "build game"*  
-__16:55__ - *Upload*  
+**09:00** - _Go !!!!_  
+**16:10** - _First time we hit "build game"_  
+**16:55** - _Upload_

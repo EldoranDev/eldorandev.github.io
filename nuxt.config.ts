@@ -17,28 +17,20 @@ export default defineNuxtConfig({
   },*/
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [
-    '@/assets/css/main.css',
-  ],
+  css: ["@/assets/css/main.css"],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [
-  ],
+  plugins: [],
 
-  content: {
-
-  },
+  content: {},
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [// https://go.nuxtjs.dev/content
-  // https://go.nuxtjs.dev/tailwindcss
-  '@nuxt/content', // "@nuxtjs/svg",
-  '@nuxtjs/tailwindcss', "@nuxt/image", '@nuxt/fonts', '@nuxt/icon'],
-  hooks: {
-    async 'nitro:config'(cfg) {
-      cfg.prerender?.routes?.push('/saufster/manual');
-      cfg.prerender?.routes?.push('/saufster/more');
-    }
-  },
-  compatibilityDate: '2024-11-25',
+  modules: [
+    "@nuxt/content",
+    "@nuxtjs/tailwindcss",
+    "@nuxt/image",
+    "@nuxt/fonts",
+    "@nuxt/icon",
+  ],
+  compatibilityDate: "2026-07-03",
 });
