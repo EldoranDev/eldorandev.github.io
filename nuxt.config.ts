@@ -22,7 +22,17 @@ export default defineNuxtConfig({
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [],
 
-  content: {},
+  content: {
+    build: {
+      markdown: {
+        highlight: {
+          theme: "github-dark-dimmed",
+
+          langs: [],
+        },
+      },
+    },
+  },
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
