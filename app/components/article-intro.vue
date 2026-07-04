@@ -1,14 +1,12 @@
 <script setup lang="ts">
-import type { ParsedContent } from "@nuxt/content";
+import type { BlogCollectionItem } from "@nuxt/content";
 
-const { article } = defineProps<{ article: ParsedContent }>();
+const { article } = defineProps<{ article: BlogCollectionItem }>();
 const date = new Date(article.date).toLocaleDateString("de-DE", {
   day: "2-digit",
   month: "long",
   year: "numeric",
 });
-
-console.log(article);
 </script>
 
 <template>
@@ -21,7 +19,7 @@ console.log(article);
     </div>
     <span>{{ date }}</span>
     <h3 class="article-intro__title">
-      <a :href="article._path">{{ article.title }}</a>
+      <a :href="article.path">{{ article.title }}</a>
     </h3>
     <div>
       <tag v-for="tag in article.tags" :key="tag" :tag="tag">

@@ -22,9 +22,6 @@ const articles = await queryCollection("blog").all();
   @apply relative mt-4 text-center;
 }
 
-.right-column {
-}
-
 @media (min-width: 1280px) {
   .left-column {
     flex: 0 0 25%;
