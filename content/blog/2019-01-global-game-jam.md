@@ -11,7 +11,7 @@ tags:
 
 This is my post mortem of the Global Game Jam 2019. The result of my participation can be found here: [Getting in Trouble](https://globalgamejam.org/2019/games/getting-trouble).
 
-I participated together with [Viktor](https://www.scatteredwolf.com) like in 2018. This time around we did not have a dedicated designer and our third team member canceled one day before the jam started. Nevertheless I would say that this GameJam was the best I've ever attended.
+I participated together with [Sophie](https://www.scatteredwolf.com) like in 2018. This time around we did not have a dedicated designer and our third team member canceled one day before the jam started. Nevertheless I would say that this GameJam was the best I've ever attended.
 
 After we watched the [opening keynote](https://www.youtube.com/watch?v=pUohwjq9RkA&t=1s) we quickly decided on creating a 3D Game as we knew where we could get assets for that. So we started a Brainstorming Session in that we not just went trough game ideas but also quickly scanned if we would have access to fitting assets for the idea.
 
