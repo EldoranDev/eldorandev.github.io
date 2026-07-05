@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const articles = await queryCollection("blog").all();
+const articles = await queryCollection("blog").order("date", "DESC").all();
 </script>
 
 <template>
