@@ -1,0 +1,1 @@
+import{_ as t,o,c,a as s,b as a,aw as n}from"./bwrZn_xp.js";const _={},r={class:"layout"},d={class:"content"};function l(f,i){const e=n;return o(),c("div",r,[s("div",d,[a(e)])])}const m=t(_,[["render",l]]);export{m as default};
